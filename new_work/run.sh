@@ -7,3 +7,4 @@ sed -i 's/(//g' yeni1
 sed -i 's/,/ /g' yeni1
 sed -i 's/)//g' yeni1
 atom yeni1
+./cal.sh
