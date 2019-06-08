@@ -2,13 +2,12 @@ import itertools
 import pickle
 i=0
 #f=open("myfile.txt","w+")
-mylist=["Diyadin",
-"Doğubayazıt",
-"Eleşkirt",
-"Hamur",
-"Patnos",
-"Taşlıçay",
-"Tutak"]
+mylist=["Göynücek",
+"Gümüşhacıköy",
+"Hamamözü",
+"Merzifon",
+"Suluova",
+"Taşova"]
 #my=list(itertools.permutations(mylist,2))
 my=list(itertools.combinations(mylist,2))
 #f.close()
@@ -18,6 +17,6 @@ my=list(itertools.combinations(mylist,2))
 #say=len(my)
 #for a in range(0,say):
 #    f.write(my[a])
-print(my)
+print(mylist)
 #print(mylist)
 #f.close()
