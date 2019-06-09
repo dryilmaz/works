@@ -17,6 +17,6 @@ my=list(itertools.combinations(mylist,2))
 #say=len(my)
 #for a in range(0,say):
 #    f.write(my[a])
-print(mylist)
+print(my)
 #print(mylist)
 #f.close()

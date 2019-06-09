@@ -4,8 +4,8 @@ city=Amasya
 city1=amasya
 ulasim1=ulasim
 ulasim=Ulaşım
-array=("ulaşım," "ulaşım rehberi," "," "dolmuş," "dolmuş hareket saatleri," "dolmuş saatleri," "dolmuş ücreti," "adana dolmuş," "$city dolmuş saatleri," "$city minibüs," "$city minibüs saatleri,"
-"minibüs," "minibüs hareket saatleri," "minibüs saatleri," "minibüs ücreti,")
+array=("dolmuş saatleri," "dolmuş," "dolmuş ücreti," "ulaşım," "ulaşım rehberi,"
+"$city dolmuş saatleri," "minibüs saatleri," "minibüs," "$city minibüs saatleri," "minibüs ücreti,")
 IFS=$'\n'
 file=/home/dyilmaz/Desktop/shell/dolmus/new_work/yeni1
 cd /home/dyilmaz/Desktop/shell/dolmus/new_work
@@ -19,13 +19,13 @@ done
 
 for line in `cat $file`
 do
-  echo -e " <b>$line ulaşım</b> rehberi tarafımızca takip edilmekte ve bilgi verilmektedir.
+  echo -e " <b>$line dolmuş saatleri</b> tarafımızca takip edilmekte ve bilgi verilmektedir.
   $city $line ulaşım bilgisine belediye otobüsü saatlerine ve dolmuş saatlerine yer verilmektedir.
   sitemiz üzerinde bulunan iller kısmından tüm <b>Türkiye</b>'deki ulaşım bilgilere ulaşabilirsiniz.
   <b>$city $line</b> için sitemiz tarafından bulunan tüm ulaşım bilgileri yayınlanmıştır.
   <a href="https://dolmussaatleri.com/$city1'_'$ulasim1/">$city $ulasim</a> sayfası üzerinden tüm ulaşım saatleri
   paylaşılmaktadır.
-  <h2>$city dolmuş saatleri</h2>
+  <h2>$line dolmuş saatleri</h2>
   $city aktif olan tüm dolmuş saatleri aşağıda paylaşılmaktadır.
   [catlist name=\"$city dolmus\" numberposts=-1]
   " >> ./sonuc/"$line"
